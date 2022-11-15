@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+  <main>
+
+ 
+  <header>
+    <nav class="mobile-navbar">
+      <div class="navleff">
+        <div class="hamburger"><img src="./images/icon-menu.svg" alt=""  class="hamburgerx"></div>
+        <h1 class="navbrand">sneakers</h1>
+        <div class="mobil menu">
+          <div class="close"><img src="./images/icon-close.svg" alt="icon-close" class="icon-cose"> </div>
+          <div class="drops"> 
+        <ul >
+          <li class="nacs"><a href="" class="link"> Collections</a> </li>
+          <li class="nacs"><a href="" class="link">  Men</a> </li>
+          <li class="nacs"><a href="" class="link">  Women</a> </li>
+          <li class="nacs"><a href="" class="link">  About</a> </li>
+          <li class="nacs"><a href="" class="link"> Contact</a> </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+      <div class="navright">
+        <span class="navimg"><img src="./images/icon-cart.svg" alt="icon-cart" class="icon cart"></span>
+        <span class="navimg"><img src="./images/image-avatar.png" alt="image-avatar" class="icon avartar"></span>
+        <div class="cartcount" id="cart1">0</div>
+      </div>
+    </nav>
+    <div class="cart-div divx  mobile">
+      <h3 class="cart-title">Cart</h3>
+      <p class="cart-content"></p>
+
+      <div class="cart-full">
+    
+        <div class="cart-products">
+          <div class="cart-image"><img src="./images/image-product-1.jpg" alt="" class="cart_product"></div>
+          <div class="cart-listings">
+            <h4 class="heading1">Fall Limited Edition Sneakers</h5>
+            <p class="listimg">$<span class="calc"></span> <span class="output"> </span></p>
+          </div>
+        </div>
+        <button class="buttons" id="btx">Checkout</button>  
+      </div>
+     
+    </div> 
+
+    <nav class="desktop-navbar">
+        <div class="navleff">
+          <h1 class="navbrand">Sneakers</h1>
+          <ul class="list">
+            <li class="nacs"><a href="" class="link"> Collections</a> </li>
+            <li class="nacs"><a href="" class="link">  Men</a> </li>
+            <li class="nacs"><a href="" class="link">  Women</a> </li>
+            <li class="nacs"><a href="" class="link">  About</a> </li>
+            <li class="nacs"><a href="" class="link"> Contact</a> </li>
+          </ul>
+        </div>
+        <div class="navright">
+          <span class="navimg"><img src="./images/icon-cart.svg" alt="icon-cart" class="icon cart"></>
+          <span class="navimg"><img src="./images/image-avatar.png" alt="image-avatar" class="icon avartar"></>
+            <div class="cartcount" id="cart">0</div>
+        </div>
+      </nav>
+      <div class="carts-div divx  desktop">
+        <h3 class="cart-title">Cart</h3>
+        <p class="cart-content"></p>
+        <div class="cart-full">
+      
+          <div class="cart-products">
+            <div class="cart-image"><img src="./images/image-product-1.jpg" alt="" class="cart_product"></div>
+            <div class="cart-listings">
+              <h4 class="heading1">Fall Limited Edition Sneakers</h5>
+              <p class="listimg">$<span class="calc"></span> <span class="output"> </span></p>
+            </div>
+          </div>
+          <button class="buttons">Checkout</button>  
+        </div>
+       
+      </div>  
+  </header>
+
+  <section class="container">
+   <article class="container1">
+      <div class="showcase"> 
+        <div class="mobil">
+          <div> 
+        <button class=" mobile arrow " id="prev" >
+        <img src="./images/icon-previous.svg" alt="icon-previous" class=" previous">
+      </button></div>
+      <div> 
+      <button class=" mobile arrow" id="nxt">
+        <img src="./images/icon-next.svg" alt="icon-next" class=" next">
+      </button></div> 
+    </div>
+       <img src="./images/image-product-1.jpg" alt="image-product-1" class="product" >
+      
+      </div>
+      <div class="thumbnails desktop">
+        <div class="thumbnail"><img id="TOne" class="thumb thumbs" src="./images/image-product-1-thumbnail.jpg"></div>
+        <div class="thumbnail"><img id="TTwo" class="thumb thumbs" src="./images/image-product-2-thumbnail.jpg"></div>
+        <div class="thumbnail"><img id="TThree" class="thumb thumbs" src="./images/image-product-3-thumbnail.jpg"></div>
+        <div class="thumbnail"><img id="TFour" class="thumb thumbs"  src="./images/image-product-4-thumbnail.jpg"></div>
+      </div>
+    </div>
+  </article>
+ 
+  <article class="container2">
+    <h4 class="title">Sneaker Company</h4>
+    <h1 class="branding">Fall Limited Edition Sneakers</h1>
+    <p class="content">
+      These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.
+    </p>
+  <div class="prices">
+    <div class="price"><span  class="fee">$</span><span class="fee fees">125.00</span>
+       <span class="rating">50%</span></div>
+    <div class="discount"> <s>$250.00</s></div>
+  </div>
+  <div class="carts">
+    <div class="value">
+      <div><button type="button" class="add" id="subs">-</button></div>
+      <div class="figure" id="fig" value="0">0</div>
+      <div><button class="add" type="button" id="add" >+</button></div>    
+    </div>
+
+    <div class="cart-button">
+    <button class="button" ><img src="./images/icon-cart.svg" class=" con" alt="icon-cart"><span class="ion">Add to cart</span> </button>   
+  </div>
+   </div>
+  </article>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
