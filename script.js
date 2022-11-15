@@ -61,7 +61,7 @@ let mainImg = document.querySelector(".product");
             }
             fig.textContent=count;  
          }
-        //  this is the line thatshows the cart number  on the cart icon to the user 
+        //  this is the line that shows the cart number  on the cart icon to the user 
         let button = document.querySelector(".button");
             button.onclick = function(){
                 cart1.textContent=count; 
@@ -70,6 +70,8 @@ let mainImg = document.querySelector(".product");
                 if(count<1){
                     cart.textContent=0;
                     cart1.textContent=0;  
+                    cart.classList.remove("show");
+                    cart1.classList.remove("show");
                 }
                 else{
                     cart.classList.add("show");
@@ -131,10 +133,14 @@ cart_icon.forEach(element =>{
 
         //  desktop
             cartbox[1].classList.toggle("shows");
-            for(i=0;i<text.length; i++){
+       
 
                 if(count<1){
-                    text[i].textContent=" cart is em[ty  "; 
+                    text[0].textContent=" cart is empty  "; 
+                    text[1].textContent=" cart is empty  "; 
+
+                    cart_button[0].classList.remove("show");
+                    cart_button[1].classList.remove("shows");
                 }  
                 else if(count>=1){
                     cart_button[0].classList.add("show");
@@ -146,9 +152,9 @@ cart_icon.forEach(element =>{
                     output[0].textContent= " $" + count*price;
                     output[1].textContent= " $" + count*price;
 
-                    text[i].textContent=""; 
+                    text[0].textContent=""; 
+                    text[1].textContent="";
                 }
-            }
     })
 })
 // the code below closes the cartbox with all its content whether full or empty 
