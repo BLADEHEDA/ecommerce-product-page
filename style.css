@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
 main{
     background:var(--White) ;
     width:100%;
@@ -74,6 +75,7 @@ img{
         height:18em;
         width:100%;
      }
+  
      .next,.previous{
         width:8px;
      }
@@ -127,7 +129,7 @@ img{
         color: var(--Orange);
         font-weight: bold;
         position: relative;
-        bottom: 0.3em;
+        bottom: 0.2em;
         margin-left: 1em;
         padding: 0.1em;
     }
@@ -135,7 +137,7 @@ img{
         background:var(--Light-grayish-blue);
         color: var(--Dark-rayish-blue);
         position: relative;
-        top:0.3em;
+        top:0.4em;
     }
     .value{
         display: flex;
@@ -231,9 +233,9 @@ img{
        }
        .cartcount{
         background:orange;
-        width:16px; 
-         border-radius: 50%; 
-        font-size: 10px;
+        width:15px; 
+         border-radius: 45%; 
+        font-size: 12px;
         color: white;
         text-align: center;
         position: relative;
@@ -312,6 +314,7 @@ img{
         display: none;
     }
     .desktop-navbar{
+        
         display: flex;
         justify-content: space-between;
         margin-bottom: 2em;
@@ -354,20 +357,26 @@ img{
         padding-left: 1.5em;
     }
     .product{
-        height:20em;
+        
         width:20em;
         border-radius: 10px;
-     }
+     }  
+    
      .thumbnails{
         width:20em;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    
      }
      .thums{
         border:solid 3px red;
         opacity:0.6;
      }
+     /* #TOne{
+        border:solid 3px red;
+        opacity:0.6;  
+    } */
      .thumb{
         width:4em;
         border-radius: 5px;
@@ -396,6 +405,7 @@ img{
     }
     .add{
         font-size:1.5em;
+        /* padding:0em 0.3em; */
     }
     .button{
         padding:0.5em 1.2em;
@@ -521,6 +531,7 @@ img{
         flex-wrap: wrap;
         justify-content: space-between;
      }
+   
      .branding{
         font-size: 2.1em;
         margin-right: -3em;
@@ -546,7 +557,7 @@ img{
         font-size:1.5em;
     }
     .button{
-        padding:0.5em 1.3em;
+        padding:0.8em 1.5em;
         border-radius: 10px;
         font-size:0.8em;
         font-weight: bold;

@@ -2,6 +2,8 @@
 let image = document.querySelectorAll(".thumb");
 let mainImg = document.querySelector(".product");
 
+// the lines below adds styles to the respective thumbnals images 
+document.getElementById('TOne').classList.add("thums")
         document.getElementById('TOne').onclick = function() {
                 mainImg.src = './images/image-product-1.jpg';
                 document.getElementById('TOne').classList.add("thums")
@@ -83,16 +85,19 @@ let mainImg = document.querySelector(".product");
         let next= document.querySelector("#nxt");
         let prev =document.querySelector("#prev");
         // i store the images in anarrau 
-        let arr_umg=['./images/image-product-1.jpg', './images/image-product-2.jpg',
-        './images/image-product-3.jpg', './images/image-product-4.jpg'  ]
+        let arr_umg=[ './images/image-product-2.jpg',
+        './images/image-product-3.jpg', './images/image-product-4.jpg' ,'./images/image-product-1.jpg' ]
         let i=0;
 
   // the lines below iterates throug the array and picks the images and changes them bases on the button clicked   
             next.onclick= ()=>{
+            
                 mainImg.src = arr_umg[i];
-                i=(i+1)%arr_umg.length;
+                i=(i+1)%(arr_umg.length);
                 next.classList.add("change");
               prev.classList.remove("change");
+              console.log(i  )
+              console.log(arr_umg.length)
                  }
 // changes button on previous button click
          prev.addEventListener("click" , function(){
